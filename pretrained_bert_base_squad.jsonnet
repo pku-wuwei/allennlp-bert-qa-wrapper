@@ -1,37 +1,37 @@
 {
   "dataset_reader": {
     "type": "squad_for_pretrained_bert",
-    // "bert-base-uncased" or "bert-large-uncased"
-    "pretrained_bert_model_file": "bert-base-uncased"
+    "pretrained_bert_model_file": "/data/nfsdata/nlp/BERT_BASE_DIR/uncased_L-12_H-768_A-12"
   },
-  // Some small data files in the right format just to have AllenNLP produce a model archive after "training".
-  // Training will not change the weights.
-  "train_data_path": "https://s3-us-west-2.amazonaws.com/pradeepd-bert-qa-models/sample_data/sample-v2.0.json",
-  "validation_data_path": "https://s3-us-west-2.amazonaws.com/pradeepd-bert-qa-models/sample_data/sample-v2.0.json",
+  "train_data_path": "/data/nfsdata/nlp/datasets/reading_comprehension/squad/dev-v2.0.json",
+  "validation_data_path": "/data/nfsdata/nlp/datasets/reading_comprehension/squad/dev-v2.0.json",
   "model": {
     "type": "bert_for_qa",
-    "bert_model_type": "bert_base",
-    // Path to a tarball containing bert_config.json and pytorch_model.bin that are outputs from HuggingFace code
-    // for BERT base
-    "pretrained_archive_path": "https://s3-us-west-2.amazonaws.com/pradeepd-bert-qa-models/bert-base/bert_base_archive.tar.gz",
-    // for BERT large
-    // "pretrained_archive_path": "https://s3-us-west-2.amazonaws.com/pradeepd-bert-qa-models/bert-large/bert_large_archive.tar.gz",
-    // BERT base threshold; dev tuned number of -1.7497849464416504
-    "null_score_difference_threshold": 0.0 
-    // BERT large threshold, dev tuned number is -1.9847722053527832
-    // "null_score_difference_threshold": 0.0 
+    "pretrained_archive_path": "/data/nfsdata/nlp/BERT_BASE_DIR/uncased_L-12_H-768_A-12",
+    "null_score_difference_threshold": 0.0
   },
   "iterator": {
     "type": "basic",
-    "batch_size": 40
+    "batch_size" : 32
   },
-
   "trainer": {
-    "num_epochs": 1,
+    "num_epochs": 20,
+    "grad_norm": 5.0,
+    "patience": 10,
+    "validation_metric": "+em",
     "cuda_device": -1,
+    "learning_rate_scheduler": {
+      "type": "reduce_on_plateau",
+      "factor": 0.5,
+      "mode": "max",
+      "patience": 2
+    },
     "optimizer": {
       "type": "adam",
-      "betas": [0.9, 0.9]
+      "betas": [
+        0.9,
+        0.9
+      ]
     }
   }
 }

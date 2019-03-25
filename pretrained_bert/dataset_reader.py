@@ -12,7 +12,7 @@ from allennlp.data.fields import MetadataField
 from allennlp.data.instance import Instance
 from allennlp.data.dataset_readers.dataset_reader import DatasetReader
 
-logger = logging.getLogger(__name__)  # pylint: disable=invalid-name
+logger = logging.getLogger(__name__)
 
 
 @DatasetReader.register("squad_for_pretrained_bert")
@@ -43,8 +43,19 @@ class SquadReaderForPretrainedBert(DatasetReader):
                     paragraph_text = paragraph["context"]
                     for question_answer in paragraph["qas"]:
                         question_text = question_answer["question"]
-                        instance = self.text_to_instance(question_text=question_text,
-                                                         paragraph_text=paragraph_text)
+                        is_impossible = question_answer["is_impossible"]
+                        if is_impossible:
+                            answer = question_answer["answers"][0]
+                            orig_answer_text = answer["text"]
+                            answer_offset = answer["answer_start"]
+                        else:
+                            orig_answer_text = ''
+                            answer_offset = -1
+                        instance = self.text_to_instance(question_text=question_text, 
+                                                         paragraph_text=paragraph_text,
+                                                         origin_answer_text=orig_answer_text,
+                                                         answer_offset=answer_offset
+                                                         )
                         if instance is not None:
                             yield instance
 
@@ -88,14 +99,17 @@ class SquadReaderForPretrainedBert(DatasetReader):
     @overrides
     def text_to_instance(self,  # type: ignore
                          question_text: str,
-                         paragraph_text: str) -> Instance:
-        # pylint: disable=arguments-differ
+                         paragraph_text: str,
+                         origin_answer_text: str = '',
+                         answer_offset: int = -1
+                         ) -> Instance:
         def is_whitespace(char):
             if char == " " or char == "\t" or char == "\r" or char == "\n" or ord(char) == 0x202F:
                 return True
             return False
 
         doc_tokens: List[str] = []
+        char_to_word_offset = []
         prev_is_whitespace = True
         for char in paragraph_text:
             if is_whitespace(char):
@@ -106,10 +120,11 @@ class SquadReaderForPretrainedBert(DatasetReader):
                 else:
                     doc_tokens[-1] += char
                 prev_is_whitespace = False
+            char_to_word_offset.append(len(doc_tokens) - 1)
         query_tokens = self._tokenizer.tokenize(question_text)
 
         if len(query_tokens) > self._max_query_length:
-            query_tokens = query_tokens[0:self._max_query_length]
+            query_tokens = query_tokens[:self._max_query_length]
 
         tok_to_orig_index = []
         orig_to_tok_index = []
@@ -127,8 +142,7 @@ class SquadReaderForPretrainedBert(DatasetReader):
         # We can have documents that are longer than the maximum sequence length.
         # To deal with this we do a sliding window approach, where we take chunks
         # of the up to our max length with a stride of `doc_stride`.
-        _DocSpan = collections.namedtuple(  # pylint: disable=invalid-name
-                "DocSpan", ["start", "length"])
+        _DocSpan = collections.namedtuple("DocSpan", ["start", "length"])
         doc_spans = []
         start_offset = 0
         while start_offset < len(all_doc_tokens):
@@ -185,8 +199,8 @@ class SquadReaderForPretrainedBert(DatasetReader):
             input_mask_tensor = torch.tensor(input_mask, dtype=torch.long)
             segment_ids_tensor = torch.tensor(segment_ids, dtype=torch.long)
             instance = Instance({"input_ids": MetadataField(input_ids_tensor),
-                                 "token_type_ids": MetadataField(segment_ids_tensor),
-                                 "attention_mask": MetadataField(input_mask_tensor),
+                                 "segment_ids": MetadataField(segment_ids_tensor),
+                                 "input_mask": MetadataField(input_mask_tensor),
                                  "tokens": MetadataField(tokens),
                                  "document_tokens": MetadataField(doc_tokens),
                                  "token_to_original_map": MetadataField(token_to_orig_map),

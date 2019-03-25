@@ -4,6 +4,7 @@ from allennlp.common.util import JsonDict
 from allennlp.data import Instance
 from allennlp.predictors.predictor import Predictor
 
+
 @Predictor.register('bert-for-qa')
 class BertQAPredictor(Predictor):
     """
@@ -28,7 +29,7 @@ class BertQAPredictor(Predictor):
         A dictionary that represents the prediction made by the system.  The answer string will be under the
         "best_span_str" key.
         """
-        return self.predict_json({"passage" : passage, "question" : question})
+        return self.predict_json({"passage": passage, "question": question})
 
     @overrides
     def _json_to_instance(self, json_dict: JsonDict) -> Instance:
