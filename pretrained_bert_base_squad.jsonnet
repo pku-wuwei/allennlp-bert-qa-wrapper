@@ -12,7 +12,7 @@
   },
   "iterator": {
     "type": "basic",
-    "batch_size" : 4
+    "batch_size" : 2
   },
   "trainer": {
     "num_epochs": 20,
@@ -20,18 +20,9 @@
     "patience": 10,
     "validation_metric": "+em",
     "cuda_device": 0,
-    "learning_rate_scheduler": {
-      "type": "reduce_on_plateau",
-      "factor": 0.5,
-      "mode": "max",
-      "patience": 2
-    },
     "optimizer": {
-      "type": "adam",
-      "betas": [
-        0.9,
-        0.9
-      ]
+      "type": "bert_adam",
+      "lr": 1e-5,
     }
   }
 }
