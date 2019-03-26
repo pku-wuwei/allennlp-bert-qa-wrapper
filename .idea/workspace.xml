@@ -2,15 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9900c45f-da03-423f-b23c-4f1e563dc297" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/run.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../allennlp/allennlp/models/phrase_level_self_attention.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../allennlp/training_config/bimpm_snli.jsonnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pretrained_bert/dataset_reader.py" beforeDir="false" afterPath="$PROJECT_DIR$/pretrained_bert/dataset_reader.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pretrained_bert/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/pretrained_bert/model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained_bert/predictor.py" beforeDir="false" afterPath="$PROJECT_DIR$/pretrained_bert/predictor.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pretrained_bert_base_squad.jsonnet" beforeDir="false" afterPath="$PROJECT_DIR$/pretrained_bert_base_squad.jsonnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained_bert_large_squad.jsonnet" beforeDir="false" afterPath="$PROJECT_DIR$/pretrained_bert_large_squad.jsonnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../pytorch-pretrained-BERT/examples/run_squad.py" beforeDir="false" afterPath="$PROJECT_DIR$/../pytorch-pretrained-BERT/examples/run_squad.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -21,7 +18,7 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/allennlp_bert_qa_wrapper$.coverage" NAME=" Coverage Results" MODIFIED="1553497734269" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/allennlp_bert_qa_wrapper$run.coverage" NAME="run Coverage Results" MODIFIED="1553498493870" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/allennlp_bert_qa_wrapper$run.coverage" NAME="run Coverage Results" MODIFIED="1553568446383" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FavoritesManager">
     <favorites_list name="allennlp-bert-qa-wrapper" />
@@ -31,8 +28,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../pytorch-pretrained-BERT/examples/run_squad.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2700">
-              <caret line="178" column="55" selection-start-line="178" selection-start-column="55" selection-end-line="178" selection-end-column="55" />
+            <state relative-caret-position="17068">
+              <caret line="959" column="83" selection-start-line="959" selection-start-column="83" selection-end-line="959" selection-end-column="83" />
               <folding>
                 <element signature="e#735#799#0" expanded="true" />
               </folding>
@@ -43,8 +40,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pretrained_bert/dataset_reader.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="494">
-              <caret line="188" column="49" lean-forward="true" selection-start-line="188" selection-start-column="49" selection-end-line="188" selection-end-column="49" />
+            <state relative-caret-position="872">
+              <caret line="199" column="16" selection-start-line="199" selection-start-column="16" selection-end-line="199" selection-end-column="16" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -55,8 +52,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pretrained_bert/model.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="729">
-              <caret line="45" column="48" lean-forward="true" selection-start-line="45" selection-start-column="48" selection-end-line="45" selection-end-column="48" />
+            <state relative-caret-position="154">
+              <caret line="29" column="60" selection-start-line="29" selection-start-column="60" selection-end-line="29" selection-end-column="60" />
               <folding>
                 <element signature="e#0#29#0" expanded="true" />
               </folding>
@@ -79,8 +76,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pretrained_bert_base_squad.jsonnet">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="351">
-              <caret line="13" column="20" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
+            <state relative-caret-position="-154">
+              <caret line="18" column="21" lean-forward="true" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/run.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="594">
+              <caret line="22" column="49" lean-forward="true" selection-start-line="22" selection-start-column="49" selection-end-line="22" selection-end-column="49" />
+              <folding>
+                <element signature="e#0#11#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -117,8 +126,8 @@
       <find>token_is_max_context</find>
       <find>attention_mask</find>
       <find>token_type_ids</find>
-      <find>loss</find>
       <find>document_tokens</find>
+      <find>loss</find>
     </findStrings>
     <replaceStrings>
       <replace>input_mask</replace>
@@ -138,19 +147,19 @@
         <option value="$PROJECT_DIR$/pretrained_bert_large_squad.jsonnet" />
         <option value="$PROJECT_DIR$/pretrained_bert/predictor.py" />
         <option value="$PROJECT_DIR$/requirements.txt" />
-        <option value="$PROJECT_DIR$/pretrained_bert_base_squad.jsonnet" />
         <option value="$PROJECT_DIR$/run.py" />
-        <option value="$PROJECT_DIR$/pretrained_bert/dataset_reader.py" />
+        <option value="$PROJECT_DIR$/pretrained_bert_base_squad.jsonnet" />
         <option value="$PROJECT_DIR$/pretrained_bert/model.py" />
         <option value="$PROJECT_DIR$/../pytorch-pretrained-BERT/examples/run_squad.py" />
+        <option value="$PROJECT_DIR$/pretrained_bert/dataset_reader.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1909" />
-    <option name="y" value="-11" />
-    <option name="width" value="3863" />
-    <option name="height" value="2123" />
+    <option name="x" value="2496" />
+    <option name="y" value="-15" />
+    <option name="width" value="2321" />
+    <option name="height" value="1244" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -168,8 +177,7 @@
             </path>
             <path>
               <item name="allennlp-bert-qa-wrapper" type="b2602c69:ProjectViewProjectNode" />
-              <item name="allennlp-bert-qa-wrapper" type="462c0819:PsiDirectoryNode" />
-              <item name="pretrained_bert" type="462c0819:PsiDirectoryNode" />
+              <item name="pytorch-pretrained-BERT" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -179,7 +187,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/run.py" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ShannonNLP" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyIntegratedToolsModulesConfigurable" />
@@ -230,12 +238,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1553397033459</updated>
-      <workItem from="1553397034769" duration="43243000" />
+      <workItem from="1553397034769" duration="48008000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43243000" />
+    <option name="totallyTimeSpent" value="48008000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1913" y="-7" width="2575" height="1415" extended-state="6" />
@@ -248,12 +256,12 @@
       <window_info anchor="bottom" id="Database Changes" />
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Python Console" />
-      <window_info anchor="bottom" id="Terminal" weight="0.32962668" />
+      <window_info anchor="bottom" id="Terminal" weight="0.60683084" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="File Transfer" weight="0.3286119" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32803813" />
-      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.47877014" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.40667197" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -481,38 +489,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/run.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-8">
-          <caret line="15" column="21" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../allennlp/allennlp/models/phrase_level_self_attention.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-17">
           <folding>
             <element signature="e#0#12#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pretrained_bert_base_squad.jsonnet">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="13" column="20" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../pytorch-pretrained-BERT/examples/run_squad.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2700">
-          <caret line="178" column="55" selection-start-line="178" selection-start-column="55" selection-end-line="178" selection-end-column="55" />
-          <folding>
-            <element signature="e#735#799#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -527,20 +508,47 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/pretrained_bert_base_squad.jsonnet">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-154">
+          <caret line="18" column="21" lean-forward="true" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/run.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="22" column="49" lean-forward="true" selection-start-line="22" selection-start-column="49" selection-end-line="22" selection-end-column="49" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/pretrained_bert/model.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="729">
-          <caret line="45" column="48" lean-forward="true" selection-start-line="45" selection-start-column="48" selection-end-line="45" selection-end-column="48" />
+        <state relative-caret-position="154">
+          <caret line="29" column="60" selection-start-line="29" selection-start-column="60" selection-end-line="29" selection-end-column="60" />
           <folding>
             <element signature="e#0#29#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../pytorch-pretrained-BERT/examples/run_squad.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17068">
+          <caret line="959" column="83" selection-start-line="959" selection-start-column="83" selection-end-line="959" selection-end-column="83" />
+          <folding>
+            <element signature="e#735#799#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/pretrained_bert/dataset_reader.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="188" column="49" lean-forward="true" selection-start-line="188" selection-start-column="49" selection-end-line="188" selection-end-column="49" />
+        <state relative-caret-position="872">
+          <caret line="199" column="16" selection-start-line="199" selection-start-column="16" selection-end-line="199" selection-end-column="16" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
           </folding>

@@ -27,7 +27,7 @@ class BertForQuestionAnswering(Model):
                  max_answer_length: int = 30) -> None:
         super().__init__(vocab)
         config = BertConfig(os.path.join(pretrained_archive_path, 'bert_config.json'))
-        self.bert_qa_model = HuggingFaceBertQA(config)
+        self.bert_qa_model = HuggingFaceBertQA(config).cuda()
         self._pretrained_archive_path = pretrained_archive_path
         self._null_score_difference_threshold = null_score_difference_threshold
         self._n_best_size = n_best_size

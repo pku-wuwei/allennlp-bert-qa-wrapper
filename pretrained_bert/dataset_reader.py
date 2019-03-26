@@ -44,14 +44,14 @@ class SquadReaderForPretrainedBert(DatasetReader):
                     for question_answer in paragraph["qas"]:
                         question_text = question_answer["question"]
                         is_impossible = question_answer["is_impossible"]
-                        if is_impossible:
+                        if not is_impossible:
                             answer = question_answer["answers"][0]
                             orig_answer_text = answer["text"]
                             answer_offset = answer["answer_start"]
                         else:
                             orig_answer_text = ''
                             answer_offset = -1
-                        instance = self.text_to_instance(question_text=question_text, 
+                        instance = self.text_to_instance(question_text=question_text,
                                                          paragraph_text=paragraph_text,
                                                          origin_answer_text=orig_answer_text,
                                                          answer_offset=answer_offset
@@ -171,9 +171,7 @@ class SquadReaderForPretrainedBert(DatasetReader):
                 split_token_index = doc_span.start + i
                 token_to_orig_map[len(tokens)] = tok_to_orig_index[split_token_index]
 
-                is_max_context = self._check_is_max_context(doc_spans,
-                                                            doc_span_index,
-                                                            split_token_index)
+                is_max_context = self._check_is_max_context(doc_spans, doc_span_index, split_token_index)
                 token_is_max_context[len(tokens)] = is_max_context
                 tokens.append(all_doc_tokens[split_token_index])
                 segment_ids.append(1)
@@ -198,11 +196,14 @@ class SquadReaderForPretrainedBert(DatasetReader):
             input_ids_tensor = torch.tensor(input_ids, dtype=torch.long)
             input_mask_tensor = torch.tensor(input_mask, dtype=torch.long)
             segment_ids_tensor = torch.tensor(segment_ids, dtype=torch.long)
-            instance = Instance({"input_ids": MetadataField(input_ids_tensor),
-                                 "segment_ids": MetadataField(segment_ids_tensor),
-                                 "input_mask": MetadataField(input_mask_tensor),
-                                 "tokens": MetadataField(tokens),
-                                 "document_tokens": MetadataField(doc_tokens),
-                                 "token_to_original_map": MetadataField(token_to_orig_map),
-                                 "token_is_max_context": MetadataField(token_is_max_context)})
+            instance = Instance({
+                "tokens": MetadataField(tokens),
+                "token_to_original_map": MetadataField(token_to_orig_map),
+                "token_is_max_context": MetadataField(token_is_max_context),
+                "input_ids": MetadataField(input_ids_tensor),
+                "input_mask": MetadataField(input_mask_tensor),
+                "segment_ids": MetadataField(segment_ids_tensor),
+                "document_tokens": MetadataField(doc_tokens),
+
+            })
             return instance
