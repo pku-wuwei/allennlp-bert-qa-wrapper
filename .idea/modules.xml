@@ -4,7 +4,6 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/../allennlp/.idea/allennlp.iml" filepath="$PROJECT_DIR$/../allennlp/.idea/allennlp.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/allennlp-bert-qa-wrapper.iml" filepath="$PROJECT_DIR$/.idea/allennlp-bert-qa-wrapper.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../pytorch-pretrained-BERT/.idea/pytorch-pretrained-BERT.iml" filepath="$PROJECT_DIR$/../pytorch-pretrained-BERT/.idea/pytorch-pretrained-BERT.iml" />
     </modules>
   </component>
 </project>

@@ -3,8 +3,10 @@ import shutil
 import sys
 
 from allennlp.commands import main
+import os
 
-config_file = "pretrained_bert_base_squad.jsonnet"
+PROJECT_PATH = os.path.abspath(__file__)
+config_file = "sample_train.jsonnet"
 
 # Use overrides to train on CPU.
 overrides = json.dumps({"trainer": {"cuda_device": -1}})

@@ -1,9 +1,11 @@
 <component name="ProjectDictionaryState">
   <dictionary name="wuwei">
     <words>
+      <w>embedder</w>
       <w>logit</w>
       <w>logits</w>
       <w>pretrained</w>
+      <w>regularizer</w>
       <w>tokenized</w>
     </words>
   </dictionary>

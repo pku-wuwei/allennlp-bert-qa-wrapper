@@ -2,15 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9900c45f-da03-423f-b23c-4f1e563dc297" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/allennlp_bert_qa/dataset_reader.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allennlp_bert_qa/model.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/experiments/bert_qa.jsonnet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/dataset_readers/squad_reader_for_pretrained_bert.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/fixtures/sample_squad_2.0.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/fixtures/sample_train.jsonnet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/models/bert_for_question_answering_test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/predictiors/predictor_test.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../allennlp/allennlp/models/phrase_level_self_attention.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../allennlp/training_config/bimpm_snli.jsonnet" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/allennlp-bert-qa-wrapper.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/allennlp-bert-qa-wrapper.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dictionaries/wuwei.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/wuwei.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained_bert/dataset_reader.py" beforeDir="false" afterPath="$PROJECT_DIR$/pretrained_bert/dataset_reader.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained_bert/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/pretrained_bert/model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained_bert_base_squad.jsonnet" beforeDir="false" afterPath="$PROJECT_DIR$/pretrained_bert_base_squad.jsonnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pytorch-pretrained-BERT/examples/run_squad.py" beforeDir="false" afterPath="$PROJECT_DIR$/../pytorch-pretrained-BERT/examples/run_squad.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pretrained_bert/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/pretrained_bert/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pretrained_bert/dataset_reader.py" beforeDir="false" afterPath="$PROJECT_DIR$/pretrained_bert/Shannon_squad_reader_for_pretrained_bert.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pretrained_bert/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/pretrained_bert/Shannon_BERT_for_question_answering.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pretrained_bert/predictor.py" beforeDir="false" afterPath="$PROJECT_DIR$/pretrained_bert/Shannon_BERT_QA_predictor.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run.py" beforeDir="false" afterPath="$PROJECT_DIR$/run.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,8 +29,15 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/allennlp_bert_qa_wrapper$bert_for_question_answering_test.coverage" NAME="bert_for_question_answering_test Coverage Results" MODIFIED="1554038804087" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/models" />
+    <SUITE FILE_PATH="coverage/allennlp_bert_qa_wrapper$pytest_in_bert_for_question_answering_test_py.coverage" NAME="pytest in bert_for_question_answering_test.py Coverage Results" MODIFIED="1553762765555" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/allennlp_bert_qa_wrapper$pytest_for_bert_for_question_answering_test_BertForQuestionAnsweringTest.coverage" NAME="pytest for bert_for_question_answering_test.BertForQuestionAnsweringTest Coverage Results" MODIFIED="1553761945964" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/models" />
+    <SUITE FILE_PATH="coverage/allennlp_bert_qa_wrapper$pytest_for_bert_for_question_answering_test_BertForQuestionAnsweringTest_test_model_can_train_save_and_load.coverage" NAME="pytest for bert_for_question_answering_test.BertForQuestionAnsweringTest.test_model_can_train_save_and_load Coverage Results" MODIFIED="1553673512411" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/models" />
     <SUITE FILE_PATH="coverage/allennlp_bert_qa_wrapper$.coverage" NAME=" Coverage Results" MODIFIED="1553497734269" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/allennlp_bert_qa_wrapper$run.coverage" NAME="run Coverage Results" MODIFIED="1553608122481" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/allennlp_bert_qa_wrapper$run.coverage" NAME="run Coverage Results" MODIFIED="1553761159367" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/allennlp_bert_qa_wrapper$squad_reader_for_pretrained_bert.coverage" NAME="squad_reader_for_pretrained_bert Coverage Results" MODIFIED="1553670519442" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/dataset_readers" />
+    <SUITE FILE_PATH="coverage/allennlp_bert_qa_wrapper$pytest_in_squad_reader_for_pretrained_bert_py.coverage" NAME="pytest in squad_reader_for_pretrained_bert.py Coverage Results" MODIFIED="1553672760137" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/dataset_readers" />
+    <SUITE FILE_PATH="coverage/allennlp_bert_qa_wrapper$pytest_for_squad_reader_for_pretrained_bert_TestSemanticScholarDatasetReader_test_read_from_file.coverage" NAME="pytest for squad_reader_for_pretrained_bert.TestSemanticScholarDatasetReader.test_read_from_file Coverage Results" MODIFIED="1553670240916" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/dataset_readers" />
   </component>
   <component name="FavoritesManager">
     <favorites_list name="allennlp-bert-qa-wrapper" />
@@ -28,91 +45,73 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pretrained_bert/model.py">
+        <entry file="file://$PROJECT_DIR$/../allennlp/allennlp/modules/token_embedders/bert_token_embedder.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="755">
-              <caret line="383" column="44" lean-forward="true" selection-start-line="383" selection-start-column="44" selection-end-line="383" selection-end-column="44" />
+            <state relative-caret-position="154">
+              <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
               <folding>
-                <element signature="e#0#18#0" expanded="true" />
+                <element signature="e#263#277#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../pytorch-pretrained-BERT/pytorch_pretrained_bert/modeling.py">
+        <entry file="file://$PROJECT_DIR$/../allennlp/allennlp/data/token_indexers/wordpiece_indexer.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="392">
-              <caret line="32" column="18" selection-start-line="32" selection-end-line="33" />
+            <state relative-caret-position="547">
+              <caret line="257" column="45" selection-start-line="257" selection-start-column="25" selection-end-line="257" selection-end-column="45" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../allennlp/allennlp/training/metrics/squad_em_and_f1.py">
+        <entry file="file://$PROJECT_DIR$/allennlp_bert_qa/dataset_reader.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="15" column="8" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
+            <state relative-caret-position="198">
+              <caret line="9" selection-start-line="9" selection-end-line="9" />
               <folding>
-                <element signature="e#0#24#0" expanded="true" />
+                <element signature="e#173#184#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../allennlp/allennlp/data/tokenizers/tokenizer.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="350">
+              <caret line="32" column="8" selection-start-line="32" selection-start-column="8" selection-end-line="32" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/allennlp_bert_qa/model.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1294">
+              <caret line="82" column="42" lean-forward="true" selection-start-line="82" selection-start-column="42" selection-end-line="82" selection-end-column="42" />
+              <folding>
+                <element signature="e#164#178#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../allennlp/allennlp/tests/modules/token_embedders/bert_embedder_test.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="283">
+              <caret line="13" column="69" selection-start-line="13" selection-start-column="69" selection-end-line="13" selection-end-column="69" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/pretrained_bert_base_squad.jsonnet">
+        <entry file="file://$PROJECT_DIR$/experiments/bert_qa.jsonnet">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="14" column="20" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pretrained_bert/dataset_reader.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-199">
-              <caret line="54" selection-start-line="54" selection-end-line="54" />
-              <folding>
-                <element signature="e#0#11#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/.PyCharm2018.3/system/remote_sources/1873631430/-409539393/tqdm/_tqdm.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="245">
-              <caret line="1001" selection-start-line="1001" selection-end-line="1001" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/.PyCharm2018.3/system/remote_sources/1873631430/768519267/allennlp/data/dataset_readers/dataset_reader.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="245">
-              <caret line="72" column="36" lean-forward="true" selection-start-line="72" selection-start-column="36" selection-end-line="72" selection-end-column="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/.PyCharm2018.3/system/remote_sources/1873631430/768519267/allennlp/commands/train.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="237">
-              <caret line="110" selection-start-line="110" selection-end-line="110" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/.PyCharm2018.3/system/remote_sources/1873631430/768519267/allennlp/commands/__init__.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="71" selection-start-line="71" selection-end-line="71" />
+            <state relative-caret-position="44">
+              <caret line="8" column="34" lean-forward="true" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -128,22 +127,10 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>document_tokens</find>
-      <find>tokens</find>
-      <find>convert_examples_to_features</find>
-      <find>improve_</find>
-      <find>_improve_answer_span</find>
-      <find>self.training</find>
-      <find>tokenize</find>
-      <find>_tokenizer</find>
-      <find>_check_is_max_context</find>
-      <find>self.tr</find>
-      <find>max_query_length</find>
       <find>max_query</find>
       <find>examples</find>
       <find>is_impossi</find>
       <find>is_impossible</find>
-      <find>loss</find>
       <find>bert_a</find>
       <find>doc_span_index</find>
       <find>get_final_text</find>
@@ -158,15 +145,31 @@
       <find>feature.</find>
       <find>CrossEntropyLoss</find>
       <find>info</find>
+      <find>_document_stride</find>
+      <find>pretrained_bert_base_squad</find>
+      <find>cuda</find>
+      <find>empty</find>
+      <find>xixi</find>
+      <find>self.training</find>
+      <find>assert</find>
+      <find>loss</find>
+      <find>logger.info</find>
+      <find>use_starting_offsets</find>
+      <find>&quot;bert</find>
+      <find>bert</find>
     </findStrings>
     <replaceStrings>
       <replace>input_mask</replace>
       <replace>segment_ids</replace>
     </replaceStrings>
     <dirStrings>
+      <dir>C:\Users\wuwei\Documents\GitHub\allennlp\allennlp</dir>
+      <dir>C:\Users\wuwei\Documents\GitHub\allennlp\allennlp\data</dir>
+      <dir>C:\Users\wuwei\Documents\GitHub\allennlp\allennlp\data\token_indexers</dir>
       <dir>C:\Users\wuwei\Documents\GitHub\allennlp</dir>
       <dir>C:\Users\wuwei\Documents\GitHub\allennlp\allennlp\models</dir>
-      <dir>C:\Users\wuwei\Documents\GitHub\allennlp\allennlp</dir>
+      <dir>C:\Users\wuwei\Documents\GitHub\allennlp\allennlp\modules</dir>
+      <dir>C:\Users\wuwei\Documents\GitHub\allennlp\allennlp\tests</dir>
       <dir>C:\Users\wuwei\Documents\GitHub\allennlp\training_config</dir>
     </dirStrings>
   </component>
@@ -177,21 +180,30 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/pretrained_bert_large_squad.jsonnet" />
-        <option value="$PROJECT_DIR$/pretrained_bert/predictor.py" />
         <option value="$PROJECT_DIR$/requirements.txt" />
-        <option value="$PROJECT_DIR$/run.py" />
         <option value="$PROJECT_DIR$/../pytorch-pretrained-BERT/examples/run_squad.py" />
-        <option value="$PROJECT_DIR$/pretrained_bert/dataset_reader.py" />
-        <option value="$PROJECT_DIR$/pretrained_bert/model.py" />
+        <option value="$PROJECT_DIR$/tests/fixtures/sample_squad_2.0.json" />
+        <option value="$PROJECT_DIR$/run.py" />
+        <option value="$PROJECT_DIR$/tests/predictiors/predictor_test.py" />
         <option value="$PROJECT_DIR$/pretrained_bert_base_squad.jsonnet" />
+        <option value="$PROJECT_DIR$/tests/models/bert_for_question_answering_test.py" />
+        <option value="$PROJECT_DIR$/pretrained_bert/model.py" />
+        <option value="$PROJECT_DIR$/pretrained_bert/predictor.py" />
+        <option value="$PROJECT_DIR$/pretrained_bert/dataset_reader.py" />
+        <option value="$PROJECT_DIR$/pretrained_bert/__init__.py" />
+        <option value="$PROJECT_DIR$/tests/dataset_readers/squad_reader_for_pretrained_bert.py" />
+        <option value="$PROJECT_DIR$/pretrained_bert/Shannon_BERT_for_question_answering.py" />
+        <option value="$PROJECT_DIR$/allennlp_bert_qa/dataset_reader.py" />
+        <option value="$PROJECT_DIR$/allennlp_bert_qa/model.py" />
+        <option value="$PROJECT_DIR$/experiments/bert_qa.jsonnet" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1908" />
-    <option name="y" value="-12" />
-    <option name="width" value="3864" />
-    <option name="height" value="2124" />
+    <option name="x" value="-9" />
+    <option name="y" value="-9" />
+    <option name="width" value="1938" />
+    <option name="height" value="1048" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -209,7 +221,17 @@
             </path>
             <path>
               <item name="allennlp-bert-qa-wrapper" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pytorch-pretrained-BERT" type="462c0819:PsiDirectoryNode" />
+              <item name="allennlp-bert-qa-wrapper" type="462c0819:PsiDirectoryNode" />
+              <item name="allennlp_bert_qa" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="allennlp-bert-qa-wrapper" type="b2602c69:ProjectViewProjectNode" />
+              <item name="allennlp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="allennlp-bert-qa-wrapper" type="b2602c69:ProjectViewProjectNode" />
+              <item name="allennlp" type="462c0819:PsiDirectoryNode" />
+              <item name="allennlp" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -222,7 +244,12 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../ShannonNLP" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\wuwei\Documents\GitHub\allennlp-bert-qa-wrapper\tests\fixtures" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -236,7 +263,29 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.bert_for_question_answering_test">
+    <configuration name="bert_for_question_answering_test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="allennlp-bert-qa-wrapper" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/models" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tests/models/bert_for_question_answering_test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="run" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="allennlp-bert-qa-wrapper" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -259,6 +308,110 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="squad_reader_for_pretrained_bert" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="allennlp-bert-qa-wrapper" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/dataset_readers" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tests/dataset_readers/squad_reader_for_pretrained_bert.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest for bert_for_question_answering_test.BertForQuestionAnsweringTest" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="allennlp-bert-qa-wrapper" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/models" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;bert_for_question_answering_test.BertForQuestionAnsweringTest&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest for bert_for_question_answering_test.BertForQuestionAnsweringTest.test_model_can_train_save_and_load" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="allennlp-bert-qa-wrapper" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/models" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;bert_for_question_answering_test.BertForQuestionAnsweringTest.test_model_can_train_save_and_load&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest in bert_for_question_answering_test.py" type="tests" factoryName="py.test" nameIsGenerated="true">
+      <module name="allennlp-bert-qa-wrapper" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="sftp://wuwei@10.10.22.14:22/data/nfsdata/home/wuwei/.conda/envs/allennlp/bin/python3.6" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/models/bert_for_question_answering_test.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest in squad_reader_for_pretrained_bert.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="allennlp-bert-qa-wrapper" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/dataset_readers" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/dataset_readers/squad_reader_for_pretrained_bert.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.run" />
+      <item itemvalue="Python.bert_for_question_answering_test" />
+      <item itemvalue="Python.squad_reader_for_pretrained_bert" />
+      <item itemvalue="Python tests.pytest in bert_for_question_answering_test.py" />
+      <item itemvalue="Python tests.pytest for bert_for_question_answering_test.BertForQuestionAnsweringTest" />
+      <item itemvalue="Python tests.pytest for bert_for_question_answering_test.BertForQuestionAnsweringTest.test_model_can_train_save_and_load" />
+      <item itemvalue="Python tests.pytest in squad_reader_for_pretrained_bert.py" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.bert_for_question_answering_test" />
+        <item itemvalue="Python tests.pytest for bert_for_question_answering_test.BertForQuestionAnsweringTest" />
+        <item itemvalue="Python tests.pytest in bert_for_question_answering_test.py" />
+        <item itemvalue="Python tests.pytest for bert_for_question_answering_test.BertForQuestionAnsweringTest.test_model_can_train_save_and_load" />
+        <item itemvalue="Python tests.pytest in squad_reader_for_pretrained_bert.py" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -271,23 +424,63 @@
       <option name="presentableId" value="Default" />
       <updated>1553397033459</updated>
       <workItem from="1553397034769" duration="75511000" />
-      <workItem from="1553604018534" duration="5386000" />
+      <workItem from="1553604018534" duration="8403000" />
+      <workItem from="1553665758985" duration="9286000" />
+      <workItem from="1553675598814" duration="3120000" />
+      <workItem from="1553699721390" duration="30072000" />
+      <workItem from="1553822643498" duration="2449000" />
+      <workItem from="1553848166238" duration="607000" />
+      <workItem from="1553912164180" duration="598000" />
+      <workItem from="1554023933905" duration="7688000" />
     </task>
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="pytest_for_bert_for_question_answering_test_BertForQuestionAnsweringTest_test_model_can_train_save_and_load - 2019.03.27 at 15h 57m 08s.xml">
+      <configuration name="pytest for bert_for_question_answering_test.BertForQuestionAnsweringTest.test_model_can_train_save_and_load" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_in_bert_for_question_answering_test_py - 2019.03.28 at 12h 22m 35s.xml">
+      <configuration name="pytest in bert_for_question_answering_test.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_for_bert_for_question_answering_test_BertForQuestionAnsweringTest - 2019.03.28 at 16h 32m 37s.xml">
+      <configuration name="pytest for bert_for_question_answering_test.BertForQuestionAnsweringTest" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_in_bert_for_question_answering_test_py - 2019.03.28 at 16h 34m 33s.xml">
+      <configuration name="pytest in bert_for_question_answering_test.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_in_bert_for_question_answering_test_py - 2019.03.28 at 16h 37m 14s.xml">
+      <configuration name="pytest in bert_for_question_answering_test.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_in_bert_for_question_answering_test_py - 2019.03.28 at 16h 38m 15s.xml">
+      <configuration name="pytest in bert_for_question_answering_test.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_in_bert_for_question_answering_test_py - 2019.03.28 at 16h 38m 38s.xml">
+      <configuration name="pytest in bert_for_question_answering_test.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_in_bert_for_question_answering_test_py - 2019.03.28 at 16h 42m 23s.xml">
+      <configuration name="pytest in bert_for_question_answering_test.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_in_bert_for_question_answering_test_py - 2019.03.28 at 16h 43m 23s.xml">
+      <configuration name="pytest in bert_for_question_answering_test.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_in_bert_for_question_answering_test_py - 2019.03.28 at 16h 46m 18s.xml">
+      <configuration name="pytest in bert_for_question_answering_test.py" configurationId="tests" />
+    </history-entry>
+  </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="80897000" />
+    <option name="totallyTimeSpent" value="137734000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1913" y="-7" width="2575" height="1415" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49960285" visible="true" weight="0.14978148" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49960285" visible="true" weight="0.20107238" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" sideWeight="0.50039715" side_tool="true" weight="0.1487834" />
+      <window_info anchor="bottom" id="Concurrent Activities Diagram" weight="0.3286119" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32803813" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.47815728" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32719547" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32268122" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4060795" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -296,9 +489,10 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="File Transfer" order="9" weight="0.3281372" />
       <window_info anchor="bottom" id="Database Changes" order="10" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.60683084" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.4688385" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
-      <window_info anchor="bottom" id="Python Console" order="13" />
+      <window_info anchor="bottom" id="Python Console" order="13" weight="0.32969603" />
+      <window_info anchor="bottom" id="Messages" order="14" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -306,6 +500,31 @@
       <window_info anchor="right" id="SciView" order="4" />
       <window_info anchor="right" id="Database" order="5" />
     </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49960285" visible="true" weight="0.13428685" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" sideWeight="0.50039715" side_tool="true" weight="0.1487834" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32735777" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32268122" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4060795" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="File Transfer" order="9" weight="0.3281372" />
+      <window_info anchor="bottom" id="Database Changes" order="10" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.25798908" />
+      <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
+      <window_info anchor="bottom" id="Python Console" order="13" weight="0.32969603" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Remote Host" order="3" />
+      <window_info anchor="right" id="SciView" order="4" />
+      <window_info anchor="right" id="Database" order="5" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -314,86 +533,78 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/pretrained_bert/model.py</url>
+          <url>file://$PROJECT_DIR$/pretrained_bert/Shannon_BERT_for_question_answering.py</url>
           <line>391</line>
           <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/pretrained_bert/Shannon_BERT_for_question_answering.py</url>
+          <line>257</line>
+          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../pytorch-pretrained-BERT/pytorch_pretrained_bert/file_utils.py">
+    <entry file="file://$PROJECT_DIR$/../allennlp/allennlp/training/metrics/squad_em_and_f1.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1254" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Dockerfile">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.skiff/kubeconfig.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2508" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.skiff/config-staging.sh">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.skiff/config-prod.sh">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.skiff/cloudbuild-deploy.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-906" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pretrained_bert_large_squad.jsonnet">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1740" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../allennlp/training_config/bimpm_snli.jsonnet">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="115" column="15" lean-forward="true" selection-start-line="115" selection-start-column="15" selection-end-line="115" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../allennlp/allennlp/models/reading_comprehension/qanet.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5522">
-          <caret line="251" selection-start-line="251" selection-end-line="251" />
+        <state relative-caret-position="261">
+          <caret line="17" column="28" lean-forward="true" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
           <folding>
-            <element signature="e#0#44#0" expanded="true" />
+            <element signature="e#0#24#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../allennlp/training_config/atis_train.json">
+    <entry file="file://$PROJECT_DIR$/../ShannonNLP/allennlp/common/params.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="38" selection-start-line="38" selection-end-line="41" selection-end-column="4" />
+        <state relative-caret-position="-4977">
+          <caret line="229" column="38" lean-forward="true" selection-start-line="229" selection-start-column="38" selection-end-line="229" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../allennlp/allennlp/data/fields/metadata_field.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="621">
+          <caret line="27" column="12" selection-start-line="27" selection-start-column="12" selection-end-line="27" selection-end-column="21" />
+          <folding>
+            <element signature="e#30#73#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../allennlp/allennlp/models/model.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1634">
+          <caret line="282" column="18" selection-start-line="282" selection-start-column="18" selection-end-line="282" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../allennlp/allennlp/models/coreference_resolution/coref.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4392">
+          <caret line="221" column="96" selection-start-line="221" selection-start-column="96" selection-end-line="221" selection-end-column="96" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../allennlp/allennlp/nn/util.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="279">
+          <caret line="943" column="4" selection-start-line="943" selection-start-column="4" selection-end-line="943" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../allennlp/training_config/bidaf.jsonnet">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="837">
+          <caret line="31" column="37" lean-forward="true" selection-start-line="31" selection-start-column="37" selection-end-line="31" selection-end-column="37" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../allennlp/training_config/qanet.jsonnet">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="134" column="10" lean-forward="true" selection-start-line="134" selection-start-column="10" selection-end-line="134" selection-end-column="10" />
+        <state relative-caret-position="2079">
+          <caret line="134" column="10" selection-start-line="134" selection-start-column="10" selection-end-line="134" selection-end-column="10" />
           <folding>
             <element signature="e#2989#3448#0" />
             <element signature="e#3484#3628#0" />
@@ -403,266 +614,344 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../allennlp/allennlp/data/dataset_readers/reading_comprehension/squad.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2992">
-          <caret line="136" column="44" selection-start-line="136" selection-start-column="44" selection-end-line="136" selection-end-column="44" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../allennlp/allennlp/predictors/predictor.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="36" column="40" selection-start-line="36" selection-start-column="40" selection-end-line="36" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../pytorch-pretrained-BERT/pytorch_pretrained_bert/tokenization.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2629">
-          <caret line="29" selection-start-line="29" selection-end-line="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../pytorch-pretrained-BERT/examples/run_classifier.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="307" column="37" selection-start-line="307" selection-start-column="27" selection-end-line="307" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../pytorch-pretrained-BERT/examples/run_lm_finetuning.py">
+    <entry file="file://$PROJECT_DIR$/../allennlp/allennlp/data/fields/sequence_field.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/requirements.txt">
+    <entry file="file://$PROJECT_DIR$/../allennlp/allennlp/models/reading_comprehension/qanet.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../allennlp/allennlp/data/dataset_readers/reading_comprehension/util.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2420">
-          <caret line="137" column="4" selection-start-line="137" selection-start-column="4" selection-end-line="137" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../pytorch-pretrained-BERT/pytorch_pretrained_bert/__main__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../pytorch-pretrained-BERT/pytorch_pretrained_bert/convert_tf_checkpoint_to_pytorch.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-330">
-          <folding>
-            <element signature="e#637#675#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../pytorch-pretrained-BERT/examples/run_sequence_labeling.py" />
-    <entry file="file://$PROJECT_DIR$/../allennlp/allennlp/run.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../allennlp/allennlp/models/crf_tagger.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1122">
+        <state relative-caret-position="4443">
+          <caret line="251" selection-start-line="251" selection-end-line="251" />
           <folding>
             <element signature="e#0#44#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../allennlp/allennlp/models/phrase_level_self_attention.py">
+    <entry file="file://$PROJECT_DIR$/../allennlp/allennlp/data/dataset_readers/reading_comprehension/squad.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-17">
+        <state relative-caret-position="881">
+          <caret line="136" column="46" lean-forward="true" selection-start-line="136" selection-start-column="46" selection-end-line="136" selection-end-column="46" />
           <folding>
-            <element signature="e#0#12#0" expanded="true" />
+            <element signature="e#0#11#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../allennlp/allennlp/models/encoder_decoders/copynet_seq2seq.py">
+    <entry file="file://$PROJECT_DIR$/../allennlp/allennlp/data/fields/adjacency_field.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="196" column="15" selection-start-line="196" selection-start-column="15" selection-end-line="196" selection-end-column="15" />
+        <state relative-caret-position="-2440">
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pretrained_bert/__init__.py">
+    <entry file="file://$PROJECT_DIR$/../allennlp/allennlp/data/fields/index_field.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="5" column="42" selection-start-line="5" selection-start-column="42" selection-end-line="5" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../allennlp/allennlp/data/fields/field.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="392">
+          <caret line="85" column="13" selection-start-line="85" selection-start-column="8" selection-end-line="85" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../allennlp/allennlp/data/fields/list_field.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../allennlp/allennlp/data/fields/text_field.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="30" column="19" selection-start-line="30" selection-start-column="19" selection-end-line="30" selection-end-column="19" />
+          <folding>
+            <element signature="e#148#197#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../allennlp/allennlp/tools/squad_eval.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
+          <caret column="47" selection-start-column="47" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharm2018.3/system/remote_sources/1873631430/-409539393/torch/cuda/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="601">
+          <caret line="178" column="21" lean-forward="true" selection-start-line="178" selection-start-column="21" selection-end-line="178" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../allennlp/allennlp/models/crf_tagger.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="774">
+          <caret line="112" column="41" selection-start-line="112" selection-start-column="41" selection-end-line="112" selection-end-column="41" />
           <folding>
-            <element signature="e#0#58#0" expanded="true" />
+            <element signature="e#0#44#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../allennlp/allennlp/models/bimpm.py">
+    <entry file="file://$PROJECT_DIR$/run.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="372">
-          <caret line="103" column="17" selection-start-line="103" selection-start-column="13" selection-end-line="103" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pretrained_bert/predictor.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="15" column="44" selection-start-line="15" selection-start-column="44" selection-end-line="15" selection-end-column="44" />
+        <state relative-caret-position="118">
+          <caret line="17" column="54" lean-forward="true" selection-start-line="17" selection-start-column="54" selection-end-line="17" selection-end-column="54" />
           <folding>
-            <element signature="e#0#31#0" expanded="true" />
+            <element signature="e#0#11#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../allennlp/allennlp/training/optimizers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="143" column="18" selection-start-line="143" selection-start-column="9" selection-end-line="143" selection-end-column="18" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/tests/fixtures/sample_train.jsonnet">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/../allennlp/training_config/bimpm.jsonnet">
+    <entry file="file://$PROJECT_DIR$/../allennlp/allennlp/modules/conditional_random_field.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="124" column="5" selection-start-line="124" selection-start-column="5" selection-end-line="124" selection-end-column="9" />
-          <folding>
-            <element signature="n#!!block;n#dataset_reader#0;n#!!top" />
-            <element signature="n#!!block;n#model#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../allennlp/training_config/bidaf.jsonnet">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-144">
-          <caret line="4" column="20" lean-forward="true" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
-          <folding>
-            <element signature="e#812#2349#0" />
-          </folding>
+        <state relative-caret-position="-1296">
+          <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../allennlp/allennlp/models/reading_comprehension/bidaf.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="635">
-          <caret line="261" column="37" selection-start-line="261" selection-start-column="17" selection-end-line="261" selection-end-column="37" />
+        <state relative-caret-position="988">
+          <caret line="265" column="38" selection-start-line="265" selection-start-column="34" selection-end-line="265" selection-end-column="38" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../pytorch-pretrained-BERT/examples/run_squad.py">
+    <entry file="file://$PROJECT_DIR$/../allennlp/allennlp/models/semantic_parsing/text2sql_parser.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1393">
-          <caret line="344" column="75" selection-start-line="344" selection-start-column="75" selection-end-line="344" selection-end-column="75" />
+        <state relative-caret-position="-450">
+          <caret line="157" column="15" selection-start-line="157" selection-start-column="15" selection-end-line="157" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../allennlp/allennlp/models/encoder_decoders/simple_seq2seq.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-148">
+          <caret line="326" column="15" selection-start-line="326" selection-start-column="15" selection-end-line="326" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../allennlp/allennlp/tests/modules/matrix_attention/cosine_matrix_attention_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="13" column="35" lean-forward="true" selection-start-line="13" selection-start-column="35" selection-end-line="13" selection-end-column="35" />
           <folding>
-            <element signature="e#735#799#0" expanded="true" />
+            <element signature="e#60#72#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../allennlp/allennlp/training/metrics/squad_em_and_f1.py">
+    <entry file="file://$PROJECT_DIR$/../allennlp/allennlp/common/checks.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="15" column="8" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
-          <folding>
-            <element signature="e#0#24#0" expanded="true" />
-          </folding>
-        </state>
+        <state relative-caret-position="-738" />
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/.PyCharm2018.3/system/remote_sources/1873631430/-409539393/tqdm/_tqdm.py">
+    <entry file="file://$PROJECT_DIR$/../allennlp/allennlp/common/testing/model_test_case.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="1001" selection-start-line="1001" selection-end-line="1001" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.PyCharm2018.3/system/remote_sources/1873631430/768519267/allennlp/data/dataset_readers/dataset_reader.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="72" column="36" lean-forward="true" selection-start-line="72" selection-start-column="36" selection-end-line="72" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.PyCharm2018.3/system/remote_sources/1873631430/768519267/allennlp/commands/train.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="110" selection-start-line="110" selection-end-line="110" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.PyCharm2018.3/system/remote_sources/1873631430/768519267/allennlp/commands/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="71" selection-start-line="71" selection-end-line="71" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/run.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="30" selection-start-line="30" selection-end-line="30" />
+        <state relative-caret-position="729">
+          <caret line="36" column="34" selection-start-line="36" selection-start-column="34" selection-end-line="36" selection-end-column="34" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/.PyCharm2018.3/system/remote_sources/1873631430/-409539393/torch/cuda/__init__.py">
+    <entry file="file://$PROJECT_DIR$/../allennlp/allennlp/common/from_params.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="785">
-          <caret line="181" column="28" lean-forward="true" selection-start-line="181" selection-start-column="28" selection-end-line="181" selection-end-column="28" />
+        <state relative-caret-position="-549">
+          <caret line="242" column="8" selection-start-line="242" selection-start-column="8" selection-end-line="242" selection-end-column="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/.PyCharm2018.3/system/remote_sources/1873631430/768519267/allennlp/common/tee_logger.py">
+    <entry file="file://$PROJECT_DIR$/tests/models/bert_for_question_answering_test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="882">
-          <caret line="47" selection-start-line="47" selection-end-line="47" />
+        <state relative-caret-position="351">
+          <caret line="13" column="80" selection-start-line="13" selection-start-column="80" selection-end-line="13" selection-end-column="80" />
+          <folding>
+            <element signature="e#0#16#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pretrained_bert/dataset_reader.py">
+    <entry file="file://$PROJECT_DIR$/tests/fixtures/sample_squad_2.0.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-199">
-          <caret line="54" selection-start-line="54" selection-end-line="54" />
+        <state relative-caret-position="1215">
+          <caret line="45" column="5" selection-start-line="45" selection-start-column="5" selection-end-line="45" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../allennlp/allennlp/tests/models/bimpm_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="7" column="38" selection-start-line="7" selection-start-column="38" selection-end-line="7" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pretrained_bert_base_squad.jsonnet">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/dataset_readers/squad_reader_for_pretrained_bert.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="8" column="27" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
+          <folding>
+            <element signature="e#43#52#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/predictiors/predictor_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="27" column="38" selection-start-line="27" selection-start-column="38" selection-end-line="27" selection-end-column="38" />
+          <folding>
+            <element signature="e#171#200#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pretrained_bert/Shannon_BERT_QA_predictor.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pretrained_bert/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+          <folding>
+            <element signature="e#0#95#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pretrained_bert/Shannon_squad_reader_for_pretrained_bert.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../pytorch-pretrained-BERT/pytorch_pretrained_bert/modeling.py">
+    <entry file="file://$PROJECT_DIR$/pretrained_bert/Shannon_BERT_for_question_answering.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="32" column="18" selection-start-line="32" selection-end-line="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pretrained_bert/model.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="755">
-          <caret line="383" column="44" lean-forward="true" selection-start-line="383" selection-start-column="44" selection-end-line="383" selection-end-column="44" />
+        <state relative-caret-position="6490">
+          <caret line="332" column="15" selection-start-line="332" selection-start-column="15" selection-end-line="332" selection-end-column="15" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pretrained_bert_base_squad.jsonnet">
+    <entry file="file://$PROJECT_DIR$/../allennlp/allennlp/data/token_indexers/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="14" column="20" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
+        <state relative-caret-position="154">
+          <caret line="7" column="78" selection-start-line="7" selection-start-column="78" selection-end-line="7" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../allennlp/allennlp/data/token_indexers/wordpiece_indexer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="547">
+          <caret line="257" column="45" selection-start-line="257" selection-start-column="25" selection-end-line="257" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/allennlp_bert_qa/dataset_reader.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+          <folding>
+            <element signature="e#173#184#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../allennlp/allennlp/modules/token_embedders/bert_token_embedder.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+          <folding>
+            <element signature="e#263#277#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../allennlp/allennlp/tests/modules/token_embedders/bert_embedder_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="283">
+          <caret line="13" column="69" selection-start-line="13" selection-start-column="69" selection-end-line="13" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../allennlp/allennlp/data/token_indexers/single_id_token_indexer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1096">
+          <caret line="12" column="6" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../allennlp/allennlp/data/dataset_readers/reading_comprehension/util.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="195" column="8" lean-forward="true" selection-start-line="195" selection-start-column="8" selection-end-line="195" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/allennlp_bert_qa/model.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1294">
+          <caret line="82" column="42" lean-forward="true" selection-start-line="82" selection-start-column="42" selection-end-line="82" selection-end-column="42" />
+          <folding>
+            <element signature="e#164#178#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../allennlp/allennlp/data/tokenizers/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#100#163#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../allennlp/allennlp/modules/span_extractors/span_extractor.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../allennlp/allennlp/data/tokenizers/tokenizer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="32" column="8" selection-start-line="32" selection-start-column="8" selection-end-line="32" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/experiments/bert_qa.jsonnet">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="8" column="34" lean-forward="true" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
         </state>
       </provider>
     </entry>
